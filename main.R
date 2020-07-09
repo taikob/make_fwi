@@ -4,10 +4,11 @@ source("circle_illusion.R")
 
 
 N<-100
-nvp<-1  # number of view port
-type<-3 # type of Fraser-Wilcox illusion
-wr<-0.08  # width rate
-vr<-0.85 # value rate
+nvp<-3  # number of view port
+type<-5 # type of Fraser-Wilcox illusion
+wr<-0.2  # width rate(type4=0.4, 2=0.2)
+vr<-0.3 # value rate
+sizerate<-10
 
 title<-paste("type",as.character(type),"_wr",as.character(wr),"_vr",as.character(vr),".png",sep = "")
 
@@ -32,4 +33,4 @@ if(type!=5){
   
 }
 
-circle_illusion(nvp,col,ph,title)
+circle_illusion(nvp,col,ph,title,sizerate)
