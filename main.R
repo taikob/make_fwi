@@ -3,14 +3,12 @@ source("colormap-AK.R")
 source("util.R")
 source("circle_illusion.R")
 
-
 N<-100
 nvp<-1  # number of view port
 type<-2 # type of Fraser-Wilcox illusion
 wr<-0.2  # width rate(type4=0.4, 2=0.2)
 vr<-0.3 # value rate of darker mid value
 sizerate<-1
-
 
 test<-1
 
@@ -44,13 +42,11 @@ if (test==1){
   title<-paste("type",as.character(type),"_wr",as.character(wr),"_vr",as.character(vr),".jpg",sep = "")
   if(type!=5){
     
-    
-    
     cm=fwmap_AK(type,N,wr,vr)
-    cmtitle<-paste("cm_",title,sep = "")
-    png(cmtitle)
-    plot(cm)
-    dev.off() 
+    #cmtitle<-paste("cm_",title,sep = "")
+    #png(cmtitle)
+    #plot(cm)
+    #dev.off() 
     
     col<-get_colormap(cm)
     

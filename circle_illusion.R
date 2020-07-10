@@ -9,14 +9,14 @@ circle_illusion <-function(nvp,col,title,sizerate,trn){
   
   if (nvp!=1){
     
-    png(title,width=(160*sizerate),height=(160*sizerate))
+    jpeg(title,width=(160*sizerate),height=(160*sizerate))
     grid.newpage()
     l<- grid.layout(nvp,nvp)
     clp<-TRUE
   
   } else {
     
-    png(title,width=(160*sizerate),height=(120*sizerate))
+    jpeg(title,width=(160*sizerate),height=(120*sizerate))
     grid.newpage()
     l<- grid.layout(nvp,nvp,
                     heights=unit(rep(1, nvp),rep("snpc", nvp)), 
