@@ -14,14 +14,17 @@ sizerate<-1
 
 test<-1
 
-if(type==2 && test==1){mxwr<-0}else{mxwr<-1}
+if(type==2 && test==1){mxwr<-0.1}else{mxwr<-0.9}
 
 if (test==1){
   for (trn in seq(4, 15, by = 1)){
-    for (wr in seq(0, mxwr, by = 0.1)) {
-      for (vr in seq(0.1, 0.9, by = 0.1)) {
-        
-        title<-paste("testtype",as.character(type),"_trn",as.character(trn),"_wr",as.character(wr),"_vr",as.character(vr),".png",sep = "")
+    for (wr in seq(0.1, mxwr, by = 0.1)) {
+      for (vr in seq(0, 1, by = 0.1)) {
+        if (type==1){
+          title<-paste("testtype",as.character(type),"_trn",as.character(trn),"_wr",as.character(wr),"_vr",as.character(vr),".jpg",sep = "")
+        } else if(type==2) {
+          title<-paste("testtype",as.character(type),"_trn",as.character(trn),"_vr",as.character(vr),".jpg",sep = "")
+        }
         
         cm=fwmap(type,N,wr,vr)
         #cmtitle<-paste("cm_",title,sep = "")
