@@ -38,7 +38,7 @@ if (test==1){
   }
 } else {
   
-  title<-paste("type",as.character(type),"_wr",as.character(wr),"_vr",as.character(vr),".png",sep = "")
+  title<-paste("type",as.character(type),"_wr",as.character(wr),"_vr",as.character(vr),".jpg",sep = "")
   if(type!=5){
     
     
