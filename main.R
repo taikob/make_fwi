@@ -8,7 +8,7 @@ N<-100
 nvp<-1  # number of view port
 type<-2 # type of Fraser-Wilcox illusion
 wr<-0.2  # width rate(type4=0.4, 2=0.2)
-vr<-0.3 # value rate
+vr<-0.3 # value rate of darker mid value
 sizerate<-1
 
 
